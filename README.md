@@ -50,11 +50,14 @@ My IDVDataset class looks like this:
 
 ```
 class IDVDataset(utils.Dataset):
+
     def load_idv(self, dataset_dir, subset):
         ...
+        
     def load_mask(self, image_id):
         ...
-  def image_reference(self, image_id):
+        
+    def image_reference(self, image_id):
         ...
 ```
 load_idv reads the JSON file, extracts the annotations, and iteratively calls the internal add_class and add_image functions to build the dataset.
