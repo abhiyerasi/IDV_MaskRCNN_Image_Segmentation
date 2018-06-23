@@ -19,7 +19,7 @@ From the [Releases page](https://github.com/matterport/Mask_RCNN/releases) page:
 Open the `inspect_idv_data.ipynb` or `inspect_idv_model.ipynb` Jupter notebooks. You can use these first notebooks to explore the dataset and chek the masks which we created and making up any sense or not and second one to run through the prediction on the test dataset.
 
 
-## Train the Balloon model
+## Train the IDV model
 
 Train a new model starting from pre-trained COCO weights
 ```
