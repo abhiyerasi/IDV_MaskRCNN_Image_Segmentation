@@ -48,6 +48,7 @@ Update the schedule to fit your needs.
 
 My IDVDataset class looks like this:
 
+`
 class IDVDataset(utils.Dataset):
     def load_idv(self, dataset_dir, subset):
         ...
@@ -55,7 +56,7 @@ class IDVDataset(utils.Dataset):
         ...
     def image_reference(self, image_id):
         ...
-
+`
 load_idv reads the JSON file, extracts the annotations, and iteratively calls the internal add_class and add_image functions to build the dataset.
 
 load_mask generates bitmap masks for every object in the image by drawing the polygons.
